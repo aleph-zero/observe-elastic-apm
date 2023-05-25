@@ -9,12 +9,14 @@ public class DummyController
     @GetMapping("/dummy")
     public String dummy()
     {
+        System.out.println("Dummy controller called");
         return "Dummy controller called";
     }
 
     @GetMapping("/")
     public String env()
     {
+        System.out.println("Root controller called");
         return "/";
     }
 }
